@@ -1,0 +1,128 @@
+:root {
+  --coklat: #b6895b;
+  --bg: #262626;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  all: unset;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: var(--bg);
+  padding: 10px 0;
+  color: white !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-content .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar .navbar-content .navbar-nav ul {
+  position: absolute;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+  background-color: var(--bg);
+  top: 100%;
+  left: 20px;
+  right: 20px;
+  padding: 20px;
+}
+
+.navbar .navbar-content .navbar-nav a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .navbar-content .navbar-nav .navbar-tools {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar .navbar-content .navbar-nav .navbar-search {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.navbar .navbar-content .navbar-nav .hamburger-menu {
+  width: 30px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .navbar-content .navbar-nav .navbar-search:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .navbar-content {
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-content .navbar-logo img {
+  height: 50px;
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  body {
+    font-size: 90%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  /* body {
+    font-size: 62.5%;
+  } */
+}
+
+/* handphone */
+@media (max-width: 450px) {
+}
